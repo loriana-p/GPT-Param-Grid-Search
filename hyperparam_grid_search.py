@@ -175,6 +175,6 @@ def grid_search_on_examples(test_examples):
 
 result_param_search = grid_search_on_examples(pd.DataFrame(test_examples.iloc[7]).transpose()) # only row 7 due to unexpected rate limitation errors
 
-l7 = pd.read_csv('/content/logs_all_params_lesson7.csv')
-best_p = l7[l7.Rating == 5][['#temperature', '#top_p', '#presence_penalty', '#freq_penalty']]
-best_p.to_csv('best_params_L7.csv')
+# l7 = pd.read_csv('/content/logs_all_params_lesson7.csv')
+# best_p = l7[l7.Rating == 5][['#temperature', '#top_p', '#presence_penalty', '#freq_penalty']]
+# best_p.to_csv('best_params_L7.csv')
